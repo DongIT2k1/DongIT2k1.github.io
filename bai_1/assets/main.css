@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* =================== nav =================== */
+
+.nav {
+    background-color: rgb(130, 138, 255);
+    height: 50px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    margin: auto 10px;
+}
+
+
+/* =================== header =================== */
+
+.header {
+    height: 250px;
+    width: 100%;
+    background-color: rgb(194, 240, 248);
+}
+
+.header-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.header-items {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.header-icon {
+    color: rgb(55, 118, 255);
+}
+
+.header-item-sub {
+    color: rgb(55, 118, 255);
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.main-item {
+    flex-basis: 33%;
+    font-size: 32px;
+    min-width: 200px;
+    min-height: 200px;
+    line-height: 20vw;
+    height: 20vw;
+}
+
+
+/* ====================== footer===================== */
+
+.footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.footer-main {
+    flex: 3;
+    background-color: rgb(137, 223, 238);
+}
+
+.footer-extra {
+    flex: 1;
+    background-color: rgb(0, 132, 165);
+}

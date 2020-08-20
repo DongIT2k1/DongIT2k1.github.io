@@ -1,0 +1,251 @@
+* {
+    font-family: "Times New Roman", Georgia, Serif;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* ===================== nav ======================= */
+
+.nav {
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(148, 148, 148, 0.5);
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 4px;
+    position: fixed;
+    z-index: 100000000;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+.nav>a{
+    padding: 15px 30px;
+}
+.nav>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav>ul li {
+    padding: 15px;
+}
+
+.nav a:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/* ===================== home ======================= */
+
+#home {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#home>span {
+    font-size: 36px;
+    letter-spacing: 7px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    opacity: 0.6;
+}
+
+
+/* ==================== About ======================= */
+
+#about {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.about-main {
+    max-width: 1100px;
+    padding: 20px;
+    margin: 60px auto;
+    display: flex;
+}
+
+.about-main-img {
+    flex-basis: 50%;
+    padding: 0 20px;
+    opacity: 0.75;
+}
+
+.about-main-content {
+    flex-basis: 50%;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 15px 0 40px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.about-main-content>p {
+    font-size: 18px!important;
+}
+
+.about-main-content span {
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 18px!important;
+}
+
+.about-main-content>p:first-of-type {
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-main-content>p:last-of-type {
+    margin: 20px 0;
+    color: #757575!important;
+}
+
+@media(max-width: 650px) {
+    .about-main {
+        flex-wrap: wrap-reverse;
+    }
+    .about-main-content {
+        flex-basis: 100%;
+    }
+    .about-main-img {
+        flex-basis: 100%;
+    }
+}
+
+
+/* ==================== menu ===================== */
+
+#menu {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-main {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.menu-main-content {
+    flex-basis: 55%;
+    padding: 20px;
+}
+
+.menu-main-img {
+    flex-basis: 45%;
+    padding: 20px;
+    opacity: 0.75;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+.menu-main-content>p {
+    color: #757575!important;
+    margin-bottom: 40px;
+}
+
+@media(max-width: 950px) {
+    .menu-main {
+        flex-wrap: wrap;
+    }
+    .menu-main-content {
+        flex-basis: 100%;
+    }
+    .menu-main-img {
+        flex-basis: 100%;
+    }
+}
+
+
+/* =========================== Contact ========================== */
+
+#contact {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-main {
+    max-width: 1100px;
+    padding: 80px 20px;
+    margin: 0px auto;
+}
+
+.contact-main>h2 {
+    text-align: left;
+}
+
+.contact-main_add {
+    color: #607d8b!important;
+    font-weight: bolder;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.contact-main-form {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-main-form>input {
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-main>button {
+    padding: 10px 15px;
+    background-color: #e2e1e1;
+    border: none;
+}
+
+.contact-main>button:hover {
+    background-color: #ccc;
+}
+
+
+/* ================== footer =================== */
+
+#footer {
+    width: 100%;
+    margin: 40px auto;
+}
+
+#footer>p {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#footer a {
+    color: black;
+}
+
+#footer a:hover {
+    color: rgb(36, 165, 36);
+}

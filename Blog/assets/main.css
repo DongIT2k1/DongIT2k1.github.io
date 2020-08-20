@@ -1,0 +1,132 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway",sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+}
+/* ============ header ================ */
+.header>h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+}
+.header>p{
+    text-align: center;
+}
+.header span{
+    padding: 3px 5px;
+    background-color: black;
+    color: white;
+}
+/* =========== container ========== */
+.container{
+    display: flex; 
+    margin: 60px auto;
+} 
+/* -------- content left -------- */
+.content-left{
+    flex-basis: 65%;
+    margin: 0 15px;
+}
+.content-left img{
+    width: 100%;
+}
+.content-left-item{
+    background-color: white;
+    box-shadow: 0 0 5px 3px rgba(141, 141, 141, 0.5);
+    margin-bottom: 25px;
+}
+.content-left-item-main{
+    margin: 20px;
+}
+.time{
+    font-size: 18px;
+}
+.time>span{
+    opacity: 0.65;
+}
+.content-left-item-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.content-left-item-footer>button{
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid rgba(175, 175, 175, 0.637);
+    font-weight: bold;
+}
+.content-left-item-footer>button:hover{
+    background-color: #ccc;
+}
+.content-left-item-footer span{
+    padding: 3px 8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+/* ------------- content right----------- */
+.content-right{
+    flex-basis: 32%;
+    margin: 0 15px;
+}
+.content-right-item{
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px 3px rgba(141, 141, 141, 0.5);
+}
+.my_name>img{
+    width: 100%;
+}
+.my_name-main{
+    margin: 0 15px;
+    padding-bottom: 8px;
+}
+.popular_posts>h3,.tags>h3{
+    padding: 15px;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+.popular_posts img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.popular_posts-item{
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid rgba(138, 136, 136, 0.3);
+}
+.popular_posts-item-content>p{
+    margin: 0;
+    font-size: 18px;
+}
+.tags span{
+    background-color: #ddd;
+    padding: 2px 5px;
+    line-height: 2;
+}
+.tags-trend{
+    padding: 3px 8px!important; 
+    background-color: black!important;
+    color: white;
+}
+.tags-main{
+    padding: 15px;
+}
+@media(max-width: 651px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .content-left{
+        flex-basis: 100%;
+    }
+    .content-right{
+        flex-basis: 100%;
+    }
+}
+

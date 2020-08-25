@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script>
+        document.getElementById("button_rep").click();
+        function myFunction(id){
+            var x = document.getElementById(id);
+            if( x.className.indexOf("replies-show") == -1 ){
+                x.className += " replies-show";
+            } else {
+                x.className = x.className.replace(" replies-show","");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-list">
+            <a href="#">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-snapchat"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-flickr"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="header">
+        <h1>DONG BLOGLIFE</h1>
+        <p>Welcome to the blog of <span>Dong's world</span></p>
+    </div>
+    <div class="background">
+        <img src="https://www.w3schools.com/w3images/jane.jpg" alt="">
+        <div class="background-main">
+            <span>Dong's</span>
+            <p>FASHION BLOG</p>
+            <button onclick="document.getElementById('sub').style.display='block'">SUBSCRISE</button>
+        </div>
+    </div>
+    <div class="subscrise" id="sub">
+        <div class="subscrise-content">
+            <h1>
+                <p>SUBSCRISE</p><i onclick="document.getElementById('sub').style.display='none'" class="fa fa-times"></i>
+            </h1>
+            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+            <div>
+                <input type="text" placeholder="Enter e-mail">
+                <button>Subscrise</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="main-item">
+                <h3>TITLE HEADING</h3>
+                <p class="main-title">Title description, <span>May 2, 2016</span></p>
+                <img src="https://www.w3schools.com/w3images/girl_hat.jpg" alt="">
+                <p class="main-paragraph"><span>More Hats!</span> I am crazy about hats these days. Some text about this
+                    blog entry. Fashion
+                    fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
+                    lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                    ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo
+                    condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+
+                    Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+                <div class="main-footer">
+                    <button><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button id="button_rep" onclick="myFunction('rep1')">Replies <span>1</span></button>
+                </div>
+                <div class="replies" id="rep1">
+                    <div class="reply">
+                        <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" alt="">
+                        <div class="reply-content">
+                            <h4>George <span>May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-item">
+                <h3>TITLE HEADING</h3>
+                <p class="main-title">Title description, <span>April 23, 2016</span></p>
+                <img src="https://www.w3schools.com/w3images/man_hat.jpg" alt="">
+                <p class="main-paragraph"><span>Hats!</span> The trend this summer is hats for men! <br>
+                    Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+                    convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac
+                    accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt
+                    sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+                    non fringilla.
+                </p>
+                <div class="main-footer">
+                    <button><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button id="button_rep" onclick="myFunction('rep2')">Replies <span>2</span></button>
+                </div>
+                <div class="replies" id="rep2">
+                    <div class="reply">
+                        <img src="https://www.w3schools.com/w3images/girl_train.jpg" alt="">
+                        <div class="reply-content">
+                            <h4>Amber <span>April 26, 2015, 10:52 PM</span></h4>
+                            <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <img src="https://www.w3schools.com/w3images/girl.jpg" alt="">
+                        <div class="reply-content">
+                            <h4>Angie <span>April 23, 2015, 9:12 PM</span></h4>
+                            <p>Love hats!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-item">
+                <h3>TITLE HEADING</h3>
+                <p class="main-title">Title description, <span>April 7, 2016</span></p>
+                <img src="https://www.w3schools.com/w3images/runway.jpg" alt="">
+                <p class="main-paragraph"><span>Dont miss!</span> The runway in New York City this weekend is gonna be
+                    legendary! <br>
+                    Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+                    convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac
+                    accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt
+                    sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+                    non fringilla.</p>
+                <div class="main-footer">
+                    <button><i class="fa fa-thumbs-up"></i> Like</button>
+                    <button id="button_rep" onclick="myFunction('rep3')">Replies <span>3</span></button>
+                </div>
+                <div class="replies" id="rep3">
+                    <div class="reply">
+                        <img src="https://www.w3schools.com/w3images/girl_mountain.jpg" alt="">
+                        <div class="reply-content">
+                            <h4>Jane <span>April 10, 2015, 7:22 PM</span></h4>
+                            <p>That was a great runway show! Thanks for everything.</p>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <img src="https://www.w3schools.com/w3images/boy.jpg" alt="">
+                        <div class="reply-content">
+                            <h4>John <span>April 8, 2015, 10:32 PM</span></h4>
+                            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <img src="https://www.w3schools.com/w3images/girl_hood.jpg" alt="">
+                        <div class="reply-content">
+                            <h4>Anja<span> April 7, 2015, 9:12 PM</span></h4>
+                            <p>Cant wait for the runway to start!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="my_name">
+                <img src="https://www.w3schools.com/w3images/avatar_girl2.jpg" alt="">
+                <div class="my_name-main">
+                    <h4>My Name</h4>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
+                        interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+            </div>
+            <div class="popular_posts">
+                <h4>Popular Posts</h4>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                    <div class="post-main">
+                        <p><span>Workshop</span></p>
+                        <p>Ultricies congue</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                    <div class="post-main">
+                        <p><span>Workshop</span></p>
+                        <p>Ultricies congue</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                    <div class="post-main">
+                        <p><span>Workshop</span></p>
+                        <p>Ultricies congue</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                    <div class="post-main">
+                        <p><span>Workshop</span></p>
+                        <p>Ultricies congue</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advertise">
+                <h4>Advertise</h4>
+                <div class="advertise-main">
+                    <div class="advertise-content">
+                        <p>Your AD Here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <h4>Tags</h4>
+                <div class="tags-main">
+                    <span>Travel</span>
+                    <span>New York</span>
+                    <span>London</span>
+                    <span>Black Pink</span>
+                    <span>SKT Faker</span>
+                    <span>Mixi Gaming</span>
+                    <span>Refund</span>
+                    <span>LDNNN</span>
+                    <span>Korea</span>
+                    <span>America</span>
+                    <span>film</span>
+                    <span>music</span>
+                    <span>games</span>
+                    <span>LOL</span>
+                </div>
+            </div>
+            <div class="inspiration">
+                <h4>Inspiration</h4>
+                <div class="inspiration-main">
+                    <div class="inspiration-img"><img src="https://www.w3schools.com/w3images/jeans.jpg" alt=""></div>
+                    <div class="inspiration-img"><img src="https://www.w3schools.com/w3images/jeans.jpg" alt=""></div>
+                    <div class="inspiration-img"><img src="https://www.w3schools.com/w3images/jeans.jpg" alt=""></div>
+                    <div class="inspiration-img"><img src="https://www.w3schools.com/w3images/jeans.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="follow">
+                <h4>Follow Me</h4>
+                <div class="follow-main">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-snapchat"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="sub">
+                <h4>Subscrise</h4>
+                <div class="sub-main">
+                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                    <div class="sub-main-button">
+                        <input type="text" placeholder="Enter e-mail">
+                        <button>Subscrise</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-main">
+            <a href="#"><i class="fa fa-arrow-up"></i> To the top</a>
+            <p>Powered by <a href="#">w3.css</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

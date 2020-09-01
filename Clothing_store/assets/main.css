@@ -370,3 +370,8 @@
         flex-basis: 49%;
     }
 }
+@media(max-width: 450px){
+    #contact{
+        flex-direction: column;
+    }
+}

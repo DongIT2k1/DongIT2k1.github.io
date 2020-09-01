@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height:1.5;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.button:hover{
+    background-color: #ccc!important;
+    color: black!important;
+}
+/* =========== nav =========== */
+.nav a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-family: "Roboto",sans-serif;
+}
+/* ---------- nav-top ----------- */
+.nav-top{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    padding: 10px 20px; 
+    box-sizing: border-box;
+    z-index: 100;
+    display: none;
+}
+.nav-top h1,i{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+/* ---------- nav-left ----------- */
+.nav-left{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 100000;
+    animation: fadeLeft 0.5s ease;
+}
+.nav-left h1{
+    font-size: 24px;
+    padding: 20px 10px;
+    letter-spacing: 4px;
+}
+.nav-list{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.nav-list>a{
+    font-size: 18px;
+    color: #757575;
+}
+.jeans{
+    color: black!important;
+}
+.jeans>i{
+    font-size: 18px;
+}
+#nav-list-jeans{
+    padding-left: 25px;
+    display: none;
+}
+#nav-list-jeans a{
+    color: #757575;
+}
+#nav-list-jeans a:first-child{
+    color: black;
+    background-color: #f1f1f1;
+}
+#nav-list-jeans a:first-child i{
+    font-size: 15px;
+}
+.nav-footer a{
+    color: black;
+}
+@keyframes fadeLeft{
+    from{
+        transform: translate(-100%,0);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+/* --------------- newsletter ---------------- */
+#newsletter{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000000;
+}
+.newsletter-main{
+    width: 80%;
+    max-width: 900px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 50px 35px;
+    box-sizing: border-box;
+    text-align: center;
+    animation: zoomOut 0.5s ease;
+}
+.newsletter-main h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 4px;
+    position: relative;
+}
+.newsletter-main>h2>i{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+.newsletter-main form{
+    display: flex;
+    padding: 10px 0;
+}
+.newsletter-main input{
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    padding: 8px 12px;
+    flex:1;
+}
+.newsletter-main button{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+@keyframes zoomOut {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+/* ================== main =============== */
+.main{
+    padding-left: 250px;
+}
+/* ------------ header ------------ */
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.header *{
+    font-size: 24px;
+    font-weight: normal;
+}
+.header-icon i{
+    padding: 0 5px;
+}
+/* ----------- background ----------- */
+.background{
+    margin: 10px;
+    position: relative;
+}
+.background img{
+    width: 100%;
+}
+.background-content{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: white;
+}
+.background-content h1{
+    font-size: 64px;
+    font-weight: normal;
+}
+.background-content p{
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+.background-content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #000;
+    font-size: 18px
+}
+/* -------------- shop-jeans ------------- */
+#shop-jeans{
+    padding: 20px 10px;
+}
+#shop-jeans>p{
+    color: #757575;
+}
+.shop-jeans-items{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shop-jeans-item{
+    flex-basis: 24%;
+    padding-bottom: 15px;
+}
+.shop-jeans-item img{
+    width: 100%;
+    filter: grayscale(70%);
+}
+.shop-jeans-item-special{
+    position: relative;
+}
+.shop-jeans-item-special span{
+    color: white;
+    background-color: #000;
+    padding: 2px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.shop-jeans-item-special button{
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.shop-jeans-item-special i{
+    font-size: 15px;
+}
+.shop-jeans-item-special:hover button{
+    display: block;
+}
+/* ------------- subscrise --------- */
+#subscrise{
+    background-color: #000;
+    padding: 50px 15px;
+    color: white;
+}
+#subscrise h2{
+    font-size: 36px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+#subscrise form{
+    display: flex;
+    padding: 15px 0;
+}
+#subscrise input{
+    padding: 5px 10px;
+    flex: 1;
+}
+#subscrise button{
+    border: none;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+}
+/* -------------- contact ---------- */
+#contact{
+    padding: 50px 15px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+#contact h3{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 15px 0;
+}
+.contact{
+    flex-basis: 33%;
+    text-align: center;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.contact input{
+    padding: 5px 8px;
+    font-size: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    margin-bottom: 10px;
+}
+.contact input:last-child{
+    border: none;
+    background-color: #000;
+    color: white;
+}
+.about{
+    flex-basis: 33%;
+    text-align: center;
+}
+.about a{
+    color: #000;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.store{
+    flex-basis: 33%;
+}
+.store p{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.store>p>i{
+    font-size: 12px;
+    width: 20px;
+}
+.store i{
+    font-size: 18px;
+}
+/* ============ footer ============= */
+.footer{
+    background-color: #000;
+    width: 100%;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
+.footer a{
+    color: white;
+}
+.show{
+    display: block!important;
+}
+@media(max-width: 850px){
+    .nav-left{
+        display: none;
+        top: 0;
+        left: 0;
+    }
+    .nav-top{
+        display: block;
+    }
+    .main{
+        padding: 60px 10px;
+    }
+}
+@media(max-width: 550px){
+    .background-content h1{
+        font-size: 30px;
+    }
+    .background-content p{
+        font-size: 15px;
+    }
+    .shop-jeans-item{
+        flex-basis: 49%;
+    }
+}

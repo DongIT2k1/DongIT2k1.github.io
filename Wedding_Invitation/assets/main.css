@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: "Raleway",sans-serif;
+}
+.button:hover{
+    background-color: #ccc!important;
+    color: black!important;    
+}
+body,html{
+    height: 100%;
+}
+/* ========== nav ========== */
+.nav{
+    position: fixed;
+    bottom: 0;
+    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+}
+.nav:hover{
+    background-color: #fff;
+}
+.nav-menu{
+    display: flex;
+}
+.nav-menu>a{
+    display: block;
+    flex: 1;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 6px 0;
+}
+.nav-menu a:last-child:hover{
+    background-color: #000!important;
+    color: white!important;
+}
+/* =========== background ============ */
+.background{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: url("https://www.w3schools.com/w3images/wedding_couple.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(50%);
+    background-attachment: fixed;
+}
+.background-content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.background-content>*{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.background  h1{
+    font-size: 64px;
+}
+.background-content b{
+    font-weight: bolder;
+}
+/* ============== jj =============== */
+#jj{
+    padding: 60px 40px;
+    background-color: #ffdddd;
+}
+#jj h2{
+    color: #757575;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+#jj img{
+    width: 100%;
+    padding: 20px 0 ;
+}
+#jj p{
+    line-height: 2;
+    font-style: italic;
+    padding: 20px 0;
+}
+#jj a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    background-color: #000;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#jj div{
+    text-align: center;
+    padding: 20px 0;
+}
+.invited{
+    width: 100%;
+    min-height: 100%;
+    background-image: url("https://www.w3schools.com/w3images/flowers.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+.invited-content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.invited-content h1{
+    font-size: 64px;
+    font-weight: 400;
+}
+.invited-content p{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+/* ============ wedding ============ */
+#wedding{
+    padding: 60px 40px;
+    background-color: #ffdddd;
+}
+#wedding h2{
+    color: #757575;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+#wedding img{
+    width: 100%;
+    padding: 30px 0;
+}
+.wedding-add{
+    display: flex;
+}
+.wedding-add>*{
+    flex: 1;
+}
+.wedding-add *{
+    text-align: center;
+    font-weight: 400;
+}
+.wedding-add h3{
+    font-size: 30px;
+}
+/* =========== rsvp ================ */
+#rsvp{
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #e9cccc;
+}
+#rsvp h1{
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+#rsvp p{
+    font-size: 18px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+}
+#rsvp button{
+    padding: 15px 60px;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+#rsvp-table{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100000;
+    display: none;
+}
+.rsvp-main{
+    background-color: #fff;
+    margin: 100px auto;
+    max-width: 600px;
+    width: 80%;
+    padding: 30px;
+    box-sizing: border-box;
+    animation: zoomOut 0.5s ease;
+}
+.rsvp-main *{
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0; 
+}
+.rsvp-main h1{
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+.rsvp-main form{
+    display: flex;
+}
+.rsvp-main input{
+    padding: 8px 10px;
+    border:1px solid rgba(145, 145, 145, 0.548);
+    text-align: left;
+    flex: 1;
+}
+.rsvp-main-footer{
+    display: flex;
+}
+.rsvp-main-footer button{
+    border: none;
+    color: white;
+    padding: 10px 0;
+    flex: 1;
+}
+.rsvp-main-footer button:first-child{
+    background-color: #4CAF50;
+}
+.rsvp-main-footer button:last-child{
+    background-color: #f44336;
+}
+/* =========== footer ============== */
+.footer{
+    padding: 30px 0;
+    margin-bottom: 50px;
+    background-color: #000;
+}
+.footer *{
+    text-align: center;
+    color: white;
+}
+.show{
+    display: block!important;
+}
+@keyframes zoomOut{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@media(max-width: 500px){
+    .wedding-add{
+        flex-direction: column;
+    }
+}

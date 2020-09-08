@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 4px;
+    background-color: #00080c;
+}
+ul{
+    margin: 0;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #00151f;
+    width: 300px;
+    border: 1px solid rgba(0,0,0,.2);
+}
+ul li{
+    list-style: none;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+ul li:last-child{
+    border-bottom: none;
+}
+ul li label {
+    color: white;
+    padding-left: 45px;
+    cursor: pointer;
+}
+ul li label input{
+    opacity: 0;
+    cursor: pointer;
+}
+.check{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 5px;
+    display: block;
+}
+ul li label .check:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #000b10;
+    border-radius: 3px;
+    transition: 0.5s;
+    transform: translateX(250px);
+}
+ul li label input:checked ~ .check:before{
+    transform: translateX(0px);
+    background: #adff00;
+    box-shadow: 0 0 15px #adff00;
+}

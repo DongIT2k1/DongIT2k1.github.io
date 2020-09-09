@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    transition: 0.5s;
+}
+.card .front img{
+    width: 100%;
+}
+.card .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    background-color: #000;
+}
+.front{
+    transform: rotateX(0);
+    top: 0;
+    left: 0;
+}
+.card:hover .front{
+    transform: rotateX(-180deg);
+}
+.card:hover .back{
+    transform: rotateX(0);
+}
+.card .back{
+    transform: rotateX(180deg);
+    top: 0;
+    left: 0;
+}
+.back h1{
+    font-size: 24px;
+    color: white!important;
+}
+.back p{
+    font-size: 18px;
+    color: #a7a7a7;
+}
+.back-icon a{
+    color: white;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s;
+}
+.facebook:hover{
+    background-color: #3B5998;
+}
+.twitter:hover{
+    background-color: #00AFF0;
+}
+.google-plus:hover{
+    background-color: #EA4335;
+}
+.linkedin:hover{
+    background-color: #0077B5;
+}
+.instagram:hover{
+    background: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#FD1D1D,#E1306C,#C13584,#833AB4,#5851DB, #405DE6);
+}
+.detail *{
+    text-align: center;
+}
+.back .detail{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.back::before{
+    content:'';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1)
+}

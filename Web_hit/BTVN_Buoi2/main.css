@@ -1,0 +1,296 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #fff;
+}
+/* =================== header ================== */
+.header {
+    height: 500px;
+    width: 100%;
+}
+.cover{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url('https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/72849102_933509600341400_3477030601708535808_n.jpg?_nc_cat=106&_nc_sid=19026a&_nc_ohc=GUOfTLOL_zAAX-KuxwK&_nc_ht=scontent.fhan2-1.fna&oh=d129e7f258e6de76565166c224599e3b&oe=5FA075BE');
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: top;
+}
+.cover-extra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url('https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/72849102_933509600341400_3477030601708535808_n.jpg?_nc_cat=106&_nc_sid=19026a&_nc_ohc=GUOfTLOL_zAAX-KuxwK&_nc_ht=scontent.fhan2-1.fna&oh=d129e7f258e6de76565166c224599e3b&oe=5FA075BE');
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+.cover-extra::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 100%;
+    backdrop-filter: blur(15px);
+}
+.cover-avatar{
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cover-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+.cover-name{
+    position: absolute;
+    top: calc(100% + 75px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+.cover-name :first-child{
+    font-size: 28px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.cover-name :last-child{
+    font-size: 20px;
+    margin: 0;
+}
+.cover-icon{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    flex-direction: column;
+    transform: translate(0, -50%);
+}
+.fa-facebook:hover{
+    color: #3B5998;
+    border-radius: 50%;
+    background-color: white;
+}
+.header-instagram:hover{
+    background: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#FD1D1D,#E1306C,#C13584,#833AB4,#5851DB, #405DE6);
+}
+.header .fa-github:hover{
+    color: rgb(105, 105, 105);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.cover-icon i{
+    font-size: 28px;
+    color: white;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.25s;
+    padding: 4px;
+}
+/* ================ container ================ */
+h1{
+    position: relative;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 650px;
+    border-radius: 50%;
+    border: 4px solid #ffc048;
+    text-align: center;
+    padding: 12px 0;
+}
+
+h1::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ffc048;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ffc048;
+    border-radius: 50%;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    background-color: #fff;
+}
+h2{
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    background-color: #1877F2;
+    padding: 8px 10px;
+    color: white;
+}
+/* ------------- friends ----------- */
+.container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+    justify-content: space-between;
+} 
+.friends{
+    flex-basis: 70%;
+}
+.friend-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.friend-item{
+    flex-basis: 32%;
+    height: 240px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    margin: 10px 0;
+}
+
+.friend-item .front,.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 0 3px 2px rgba(10, 10, 10, 0.267);
+    border-radius: 10px;
+}
+.friend-item .front>img{
+    width: 100%;
+}
+.friend-item .front{
+    transform: rotateX(0);
+}
+.friend-item .back{
+    transform: rotateX(180deg);
+}
+.friend-item:hover .front{
+    transform: rotateX(-180deg);
+}
+.friend-item:hover .back{
+    transform: rotateX(0);
+}
+.back .detail{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.detail *{
+    text-align: center;
+}
+.back .detail h3{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+.back .detail p{
+    font-size: 16px;
+    color: white;
+}
+.back .detail-icon{
+    width: 100%;
+}
+.back .detail-icon a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    line-height: 33px;
+    transition: 0.5s;
+}
+.facebook:hover{
+    background-color: #3B5998;
+}
+.twitter:hover{
+    background-color: #00AFF0;
+}
+.instagram:hover{
+    background: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#FD1D1D,#E1306C,#C13584,#833AB4,#5851DB, #405DE6);
+}
+.github:hover{
+    background-color: rgb(105, 105, 105);
+}
+.detail-icon i{
+    font-size: 16px;
+}
+.back::before{
+    content:"";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  rgba(255, 255, 255, 0.1);
+}
+/* ----------- blog ----------- */
+.blog{
+    flex-basis: 29%;
+}
+.blog-item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.blog-item{
+    display: flex;
+    border: 1px solid  #3B5998;
+    padding: 5px;
+    margin: 10px 0;
+}
+.blog-text{
+    padding-left: 5px;
+}
+.blog-text h4{
+    margin: 5px;
+    color: black;
+}
+.blog a{
+    text-decoration: none;
+}
+.blog-text p{
+    margin: 5px;
+}
+/* ============ footer =========== */
+.footer{
+    background-color: #3B5998;
+    padding: 35px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}

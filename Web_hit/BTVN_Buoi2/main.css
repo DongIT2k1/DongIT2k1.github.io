@@ -294,3 +294,35 @@ h2{
     font-size: 32px;
     color: white;
 }
+@media (max-width: 1200px){
+    .container{
+        flex-wrap: wrap;
+        
+    }
+    .container>*{
+        flex-basis: 80%;
+        margin: 0 auto;
+        transition: 0.25s;
+    }
+}
+@media (max-width: 1050px){
+    .container>*{
+        flex-basis: 90%;
+    }
+}
+@media (max-width: 900px){
+    .friend-list{
+        justify-content: space-evenly;
+    }
+    .friend-item{
+        flex-basis: 45%;
+    }
+}
+@media (max-width: 650px){
+    .friend-item{
+        flex-basis: 100%;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+}

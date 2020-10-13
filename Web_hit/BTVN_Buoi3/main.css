@@ -126,6 +126,10 @@ body,html{
     border-radius: 20px;
     color: white;
 }
+.background-content>a:hover{
+    background-color: white;
+    color: black;
+}
 .background-content>img{
     position: absolute;
     top: 5%;
@@ -145,6 +149,7 @@ body,html{
 }
 .content-img{
     flex-basis: 40%;
+    position: relative;
 }
 .content-img>img{
     border-radius: 20px;
@@ -153,7 +158,18 @@ body,html{
     flex-basis: 50%;
     margin: 30px;
 }
-
+.content-profile button{
+    background-color: var(--primary-color);
+    border: 1px #333 solid;
+    padding: 8px 12px;
+    border-radius: 15px; 
+    color: white!important;
+    display: block;
+    margin: 0 auto;
+}
+.content-profile button:hover{
+    background-color: var(--secondary-color);
+}
 .container h1>a{
     color: black;
     text-decoration: none;
@@ -173,12 +189,33 @@ body,html{
 .content-profile>p>a:hover{
     text-decoration: underline;
 }
+.content .content-img::before{
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    color: white;
+    position: absolute;
+    padding: 5px 10px;
+    top: 30px;
+}
+.anh_Khanh .content-img::before{
+    content: "sale off 90%";
+    right: 0;
+    transform: translateX(50%);
+}
+.anh_Nam .content-img::before{
+    content: "new";
+    left: 0;
+    transform: translateX(-50%);
+}
 @media(max-width: 700px){
     .anh_Khanh{
         flex-wrap: wrap;
     }
     .anh_Nam{
         flex-wrap: wrap-reverse;
+    }
+    .content .content-img::before{
+        transform: unset;
     }
     .content>.content-img,.content-profile{
         flex-basis: 100%;

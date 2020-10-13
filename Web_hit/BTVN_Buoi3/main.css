@@ -227,6 +227,7 @@ body,html{
     color: white;
     text-align: center;
     margin: 0;
+    font-family: 'Chilanka', cursive;
 }
 .footer>p{
     padding: 50px 0;
@@ -235,5 +236,8 @@ body,html{
     margin: 0;
 }
 .footer span{
-    color: yellow;
+    color: cyan;
+    font-size: 38px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px cyan;
 }

@@ -1,0 +1,917 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* ============== header ============ */
+.header{
+    position: relative;
+    width: 1414px;
+    height: 59px;
+    
+}
+.line1{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 100%;
+bottom: 0%;
+border: 1px solid #E2E2E2;
+}
+.rectangle1{
+    position: absolute;
+left: 9.38%;
+right: 84.38%;
+top: 0%;
+bottom: 15.25%;
+}
+/* ========= luyen de ============ */
+.luyenDe{
+    position: absolute;
+left: 17.85%;
+top: 28.81%;
+/* right: 77.85%; */
+bottom: 38.98%;
+padding-left: 15px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+color: #000000;
+}
+/* Nâng cấp Tải ứng dụng Học tiếng Nhật Từ điển tiếng Nhật */
+.text{
+    position: absolute;
+left: 24.86%;
+right: 45.07%;
+top: 28.81%;
+bottom: 38.98%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+color: rgba(0, 0, 0, 0.6);
+}
+/* Thời gian còn lại: 59 ngày */
+.time{
+    position: absolute;
+left: 74.79%;
+/* right: 13.75%; */
+top: 52.54%;
+bottom: 15.25%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #000000;
+
+}
+/* vip */
+.vip{
+    position: absolute;
+    left: 83.75%;
+    right: 14.65%;
+    top: 11.86%;
+    bottom: 55.93%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+/* Ellipse 1 */
+.eclip1{
+    position: absolute;
+left: 87.15%;
+right: 9.38%;
+top: 0%;
+bottom: 15.25%;
+border-radius: 50%;
+background: #C4C4C4;
+}
+/* Rectangle 3 */
+.rectangle3{
+    position: absolute;
+left: 82.78%;
+right: 13.75%;
+top: 6.78%;
+bottom: 50.85%;
+
+background: #ED1C24;
+border-radius: 5px;
+}
+/* footer */
+.footer{
+    position: relative;
+width: 1440px;
+height: 250px;
+}
+/* Rectangle 2 */
+.rectangle2{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F5F5F5;
+}
+/* rectangle 5 */
+.rectangle5{
+    position: absolute;
+left: 9.38%;
+right: 84.38%;
+top: 10%;
+bottom: 70%;
+}
+/* group 1 */
+.group1{
+    position: absolute;
+left: 9.38%;
+right: 81.6%;
+top: 66.8%;
+bottom: 17.2%;
+}
+/* Rectangle 6 */
+.rectangle6{
+    position: absolute;
+left: 9.38%;
+right: 81.6%;
+top: 66.8%;
+bottom: 17.2%;
+background: #E9E9E9;
+border-radius: 10px;
+}
+/* global */
+.global{
+    position: absolute;
+left: 10.07%;
+right: 88.96%;
+top: 71.6%;
+bottom: 22%;
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+color: #000000;
+}
+/* triangle */
+.triangle{
+    position: absolute;
+left: 16.94%;
+right: 82.43%;
+top: 71.6%;
+bottom: 22%;
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+color: #000000;
+}
+/* Tieng Viet */
+.tiengViet{
+    position: absolute;
+left: 11.53%;
+right: 83.82%;
+top: 70.8%;
+bottom: 21.6%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+color: #000000;
+}
+.footer a{
+    display: block;
+    color: unset;
+    text-decoration: none;
+}
+/* Về chúng tôi Trợ giúp */
+.trogiup{
+    position: absolute;
+left: 9.38%;
+right: 77.5%;
+top: 38.8%;
+bottom: 30.8%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+}
+
+.footer-luyenDe{
+    position: absolute;
+left: 23.82%;
+right: 62.15%;
+top: 13.2%;
+bottom: 17.2%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+}
+.footer-luyenDe>a:first-child{
+    color: #000000!important;
+}
+.footer-luyenDe>a{
+    color: rgba(0, 0, 0, 0.6);
+}
+/* Tiện ích khác Học tiếng Nhật Từ điển tiếng Nhật */
+.footer-tienIch{
+    position: absolute;
+left: 40.49%;
+right: 45.49%;
+top: 13.2%;
+bottom: 17.2%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+}
+.footer-tienIch>a:first-child{
+    color: #000000!important;
+}
+.footer-tienIch>a{
+    color: rgba(0, 0, 0, 0.6);
+}
+/* Tài nguyên mở Dành cho giáo viên Dành cho trung tâm */
+.footer-tainguyen{
+    position: absolute;
+left: 57.01%;
+right: 28.96%;
+top: 13.2%;
+bottom: 17.2%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+}
+.footer-tainguyen>a:first-child{
+    color: #000000!important;
+}
+.footer-tainguyen>a{
+    color: rgba(0, 0, 0, 0.6);
+}
+/* Tải ứng dụng */
+.taiungdung{
+    position: absolute;
+left: 73.26%;
+right: 20.56%;
+top: 13.2%;
+bottom: 79.2%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+color: #000000;
+}
+/* Rectangle 7 */
+.rectangle7{
+    position: absolute;
+left: 73.26%;
+right: 18.4%;
+top: 26.8%;
+bottom: 57.2%;
+border-radius: 5px;
+}
+/* Rectangle 8 */
+.rectangle8{
+    position: absolute;
+left: 82.29%;
+right: 9.38%;
+top: 26.8%;
+bottom: 57.2%;
+border-radius: 5px;
+}
+/* Kết nối với chúng tôi */
+.ketnoi{
+    position: absolute;
+    left: 73.26%;
+    right: 17.08%;
+    top: 53.2%;
+    bottom: 39.2%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+/* facebook */
+.facebook{
+    position: absolute;
+left: 73.26%;
+right: 25.21%;
+top: 67.6%;
+bottom: 20.8%;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+color: #000000;
+}
+/* google */
+.gg{
+    position: absolute;
+left: 75.49%;
+right: 22.99%;
+top: 67.6%;
+bottom: 20.8%;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height */
+color: #000000;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+/* desktop 1 */
+.desktop-1{
+    position: relative;
+width: 1440px;
+height: 1234px;
+
+background: #FFFFFF;
+
+}
+/* Bảng giá nâng cấp tài khoản */
+.banggia{
+    position: absolute;
+    width: 328px;
+    height: 34px;
+    left: 556px;
+    top: 205px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 34px;
+    /* identical to box height */
+    
+    color: #000000;
+}
+
+/* Nâng cấp tài khoản để có trải nghiệm trọn vẹn hơn trong kho tài nguyên đề thi năng lực tiếng Nhật của chúng tôi. */
+.banggia-text{
+
+    position: absolute;
+    width: 596px;
+    height: 52px;
+    left: 396px;
+    top: 250px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #747474;
+}
+
+
+
+/* Group 2 */
+.group2{
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 268px;
+    top: 405px;
+}
+
+
+
+/* Rectangle 4 */
+.rectangle4-coban{
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 268px;
+    top: 405px;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+/* MIỄN PHÍ */
+.mienphi{
+    position: absolute;
+    width: 82px;
+    height: 25px;
+    left: 326px;
+    top: 477px; 
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    color: #118A42;
+}
+
+/* Cơ bản */
+.coban{
+
+    position: absolute;
+    width: 55px;
+    height: 22px;
+    left: 340px;
+    top: 437px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+
+/* Lần thi: 5 lần/ ngày Xem giải thích: Không Đóng góp giải thích: Có */
+.coban-content{
+    position: absolute;
+    width: 164px;
+    height: 148px;
+    left: 287px;
+    top: 526px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+
+/* Rectangle 9 */
+.rectangle9{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 308px;
+    top: 674px;
+    
+    background: #EAEAEA;
+    border-radius: 100px;
+}
+
+
+/* Mặc định */
+.macdinh{
+    position: absolute;
+    width: 67px;
+    height: 20px;
+    left: 334px;
+    top: 684px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #134897;
+}
+
+
+
+/* Group 3 */
+.group3{
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 478px;
+    top: 405px;
+}
+
+
+
+/* Rectangle 4 */
+.rectangle4-3{
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 478px;
+    top: 405px;
+    
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+/* 225.000đ */
+.gia-3thang{
+    position: absolute;
+    width: 79px;
+    height: 25px;
+    left: 538px;
+    top: 477px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #134897;
+}
+
+
+
+/* 3 tháng */
+.time-3thang{
+    position: absolute;
+    width: 59px;
+    height: 22px;
+    left: 548px;
+    top: 437px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+
+/* Lần thi: Không giới hạn Xem giải thích: Có Đóng góp giải thích: Có */
+.content-3thang{
+    position: absolute;
+    width: 164px;
+    height: 148px;
+    left: 497px;
+    top: 526px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+/* Rectangle 9 */
+.rectangle9-3thang{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 518px;
+    top: 674px;
+    background: #EAEAEA;
+    border-radius: 100px;
+}
+
+
+/* Nâng cấp */
+.nangcap-3thang{
+    position: absolute;
+    width: 68px;
+    height: 20px;
+    left: 543px;
+    top: 684px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #134897;
+}
+
+
+
+/* Group 4 */
+.group4{
+    position: absolute;
+    width: 215px;
+    height: 341px;
+    left: 708px;
+    top: 372px;
+}
+
+
+
+/* Rectangle 4 */
+.rectangle4-6thang{
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 708px;
+    top: 385px;
+    
+    border: 2px solid #134897;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+/* 324.000đ */
+.gia-6thang{
+    position: absolute;
+    width: 79px;
+    height: 25px;
+    left: 768px;
+    top: 457px; 
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    color: #134897;
+}
+
+
+
+/* 6 tháng */
+.time-6thang{
+    position: absolute;
+    width: 59px;
+    height: 22px;
+    left: 778px;
+    top: 417px; 
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #000000;
+}
+
+
+
+/* Lần thi: Không giới hạn Xem giải thích: Có Đóng góp giải thích: Có */
+.content-6thang{
+    position: absolute;
+    width: 164px;
+    height: 148px;
+    left: 727px;
+    top: 506px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+
+/* Rectangle 9 */
+.rectangle9-6thang{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 748px;
+    top: 654px;
+    background: #134897;
+    border-radius: 100px;
+}
+
+
+/* Nâng cấp */
+.nangcap-6thang{
+
+    position: absolute;
+    width: 68px;
+    height: 20px;
+    left: 773px;
+    top: 664px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+
+
+/* Ellipse 2 */
+.ellipse2{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 873px;
+    top: 372px;
+    border-radius: 50%;
+    background: #FF6914;
+}
+
+/* Hot */
+.hot{
+
+    position: absolute;
+    width: 27px;
+    height: 20px;
+    left: 882px;
+    top: 387px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+
+
+/* Group 5 */
+.group5{
+
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 938px;
+    top: 405px;
+}
+
+
+
+/* Rectangle 4 */
+.rectangle4-12thang{
+    position: absolute;
+    width: 200px;
+    height: 328px;
+    left: 938px;
+    top: 405px;
+    
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+/* 432.000đ */
+.gia-12thang{
+    position: absolute;
+    width: 79px;
+    height: 25px;
+    left: 998px;
+    top: 477px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #134897;
+}
+
+
+
+/* 12 tháng */
+.time-12thang{
+
+    position: absolute;
+    width: 68px;
+    height: 22px;
+    left: 1003px;
+    top: 437px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+
+/* Lần thi: Không giới hạn Xem giải thích: Có Đóng góp giải thích: Có */
+.content-12thang{
+
+    position: absolute;
+    width: 164px;
+    height: 148px;
+    left: 957px;
+    top: 526px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+
+/* Rectangle 9 */
+.rectangle9-12thang{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 978px;
+    top: 674px;
+    
+    background: #EAEAEA;
+    border-radius: 100px;
+}
+
+
+/* Nâng cấp */
+.nangcap-12thang{
+    position: absolute;
+    width: 68px;
+    height: 20px;
+    left: 1003px;
+    top: 684px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #134897;
+}
+span{
+    color: red;
+}
+/* desktop-2 */
+.desktop-2{
+    position: relative;
+width: 1440px;
+height: 1234px;
+
+background: #FFFFFF;
+}

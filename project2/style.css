@@ -354,6 +354,9 @@ button{
     margin-left: 0;
     margin-top: 35px;
 }
+.colum2{
+    margin-top: 35px;
+}
 .colum2>a{
     display: block;
     font-style: normal;
@@ -361,7 +364,7 @@ button{
     font-size: 14px;
     line-height: 19px;
     text-decoration: none;
-    padding: 0 5px;
+    padding-bottom: 8px;
 }
 .colum2>a:first-child{
     color: #000000!important;

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="cover">  
+            <div class="cover_change"><span><i class="fa fa-camera"></i> Chỉnh sửa ảnh bìa</span></div>
+            <div class="avatar">
+                <div class="avatar_change"><i class="fa fa-camera"></i></div>
+            </div> 
+        </div>
+        <div class="header_maintext">
+            <h1>Đông</h1>
+            <p>✪ 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫</p>
+            <p>😐</p>
+            <p>Chỉnh sửa</p>
+        </div>
+        <div class="header-nav">
+            <div class="left">
+                <button class="left-item bv menu-selected" onclick="changeTab('bv')">Bài viết</button>
+                <button class="left-item gt" onclick="changeTab('gt')">Giới thiệu</button>
+                <button class="left-item bb" onclick="changeTab('bb')">Bạn bè <span> 1850</span></button>
+                <button class="left-item anh" onclick="changeTab('anh')">Ảnh</button>
+            </div>
+            <div class="right">
+                <div class="right-item"><i class="fa fa-pen"></i> Chỉnh sửa trang c...</div>
+                <div class="right-item"><i class="fa fa-eye"></i></div>
+                <div class="right-item"><i class="fa fa-search"></i></div>
+                <div class="right-item"><i class="fa fa-ellipsis-h"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bai_viet tab tab-show">
+            <div class="left">
+                <div class="introduce">
+                    <h2>Giới thiệu</h2>
+                    <p><i class="fa fa-briefcase"></i> Làm việc tại <a href="https://www.facebook.com/HITClub.HaUI">CLB 
+                         Tin học - Đại học công nghiệp Hà Nội</a></p>
+                    <p><i class="fa fa-graduation-cap"></i> Học tại
+                        <a href="https://www.facebook.com/DHCNHN.DCN.HaUI">Đại Học Công Nghiệp Hà Nội</a></p>
+                    <p><i class="fa fa-graduation-cap"></i> Đã học tại 
+                        <a href="https://www.facebook.com/DHCNHN.DCN.HaUI"> THPT C Kim Bảng</a></p>
+                    <p><i class="fa fa-home"></i> Sống tại <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
+                    </p>
+                    <p><i class="fa fa-map-marker-alt"></i> Đến từ <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
+                    </p>
+                    <p><i class="fa fa-clock"></i> Tham gia vào Tháng 10 năm 2015</p>
+                    <p><i class="fa fa-wifi"></i> Có 773 người theo dõi</p>
+                    <p class="link_ins"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/___4thang12___/">___4thang12___</a></p>
+                    <p><i class="fab fa-github"></i> https://github.com/badongit</p>
+                    <button>Chỉnh sửa chi tiết</button>
+                    <button>Thêm sở thích</button>
+                    <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-9/108132709_1455880127953238_6034578221695508199_o.jpg?_nc_cat=106&ccb=2&_nc_sid=825194&_nc_ohc=iGhKEDGuSa4AX_wcan5&_nc_ht=scontent.fhan5-3.fna&oh=6f4605cfc66cf32feeafc1b91413588d&oe=5FE6F4B7" alt="">
+                    <button>Chỉnh sửa phần đáng chú ý</button>
+                </div>
+                <div class="list-image">
+                    <p><span>Ảnh</span><span>Xem tất cả ảnh</span></p>
+                    <div class="images">
+                        <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt=""></div>
+                        <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Logo_Dong.png" alt=""></div>
+                        <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
+                        <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
+                        <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="list-friend">
+                    <p><span>Bạn bè</span><span>Xem tất cả bạn bè</span></p>
+                    <span>1850 người bạn</span>
+                    <div class="friends">
+                        <div class="friend">
+                            <img src="./image/Minz.jpg" alt="">
+                            <p>Minh Phương</p>
+                        </div>
+                        <div class="friend">
+                            <img src="./image/Logo_Dong.png" alt="">
+                            <p>Nguyễn Đông</p>
+                        </div>
+                        <div class="friend">
+                            <img src="./image/Phong.jpg" alt="">
+                            <p>Hà Phòng Gorơki</p>
+                        </div>
+                        <div class="friend">
+                            <img src="./image/MaiPhuong.jpg" alt="">
+                            <p>Phương Sapphire</p>
+                        </div>
+                        <div class="friend">
+                            <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.0-9/127586061_3828259873871709_2595024946868850254_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=7IY5XJfcqMwAX-vXlHH&_nc_ht=scontent.fhan5-5.fna&oh=28639fba9dbf42d39aa81e60c1fb933c&oe=5FE92FEF" alt="">
+                            <p>Duy Khánh</p>
+                        </div>
+                        <div class="friend">
+                            <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/121984936_2528470647444799_6530212761749001973_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HPXb1kbicUsAX9yDMhr&_nc_ht=scontent.fhan5-7.fna&oh=f153d09859ed6c0f4f89a3cb3934246b&oe=5FEA9035" alt="">
+                            <p>Doan Vũ</p>
+                        </div>
+                        <div class="friend">
+                            <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
+                            <p>Tất Trung</p>
+                        </div>
+                        <div class="friend">
+                            <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
+                            <p>Lê Văn Nam</p>
+                        </div>
+                        <div class="friend">
+                            <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
+                            <p>Trần Chiến Công</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Quyền riêng tư · Điều khoản · Quảng cáo · Lựa chọn quảng cáo · Cookie · Xem thêm · Facebook © 2020</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="status">
+                    <div class="status-input">
+                        <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/125562670_1273921896300167_3356570656127877967_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=3tL_4oWXXOIAX9Lm7ve&_nc_ht=scontent.fhan5-1.fna&oh=2e947c956d1c0e1118df38c1adb3bcda&oe=5FE760B9" alt="">
+                        <input type="text" placeholder="Bạn đang nghĩ gì ?">
+                    </div>
+                    <hr>
+                    <div class="status-menu">
+                        <p><i class="fa fa-file-image" style="color: #45bd62;"></i> Ảnh/Video</p>
+                        <p><i class="fa fa-user-friends" style="color: #1d7af2;"></i> Gẳn thẻ bạn bè</p>
+                        <p><i class="fa fa-flag" style="color: #3cb0d6;"></i> Sự kiện trong đời</p>
+                    </div>
+                </div>
+                <div class="post1">
+                    <div class="title">
+                        <div class="avt">
+                            <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/125562670_1273921896300167_3356570656127877967_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=3tL_4oWXXOIAX9Lm7ve&_nc_ht=scontent.fhan5-1.fna&oh=2e947c956d1c0e1118df38c1adb3bcda&oe=5FE760B9" alt="">
+                        </div>
+                        <div class="text">
+                            <p><span>Đông</span> đã cập nhật ảnh đại diện của anh ấy.</p>
+                            <p>22 tháng 11 lúc 11:54 · <i class="fa fa-globe-asia"></i> </p>
+                        </div>
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    <p>Yang hồ mõm 😎</p>
+                    <div class="image">
+                        <div class="avatar-image">
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <p><i style="color: #1095f4" class="fa fa-thumbs-up"></i> 76</p>
+                        <p>2 bình luận</p>
+                    </div>
+                    <div class="main-post">
+                        <div class="post-menu">
+                            <button id="like" onclick="like('like')" ><i class="fa fa-thumbs-up"></i> Thích</button>
+                            <p><i class="fa fa-comment"></i> Bình luận</p>
+                            <p><i class="fa fa-share"></i> Chia sẻ</p>
+                        </div>
+                        <p>Phù hợp nhất <i class="fa fa-caret-down"></i></p>
+                        <div class="write-cmt">
+                            <div class="avt">
+                                <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/125562670_1273921896300167_3356570656127877967_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=3tL_4oWXXOIAX9Lm7ve&_nc_ht=scontent.fhan5-1.fna&oh=2e947c956d1c0e1118df38c1adb3bcda&oe=5FE760B9" alt="">
+                            </div>
+                            <input type="text" placeholder="Viết bình luận...">
+                        </div>
+                        <div class="cmt">
+                            <div class="avt">
+                                <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t1.0-9/126520466_2809454332677255_396514324901286763_n.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=MqZ4KOGVUKIAX-IQcaU&_nc_ht=scontent-hkg4-2.xx&oh=736295fb53c8806898169594142da073&oe=5FE98766" alt="">
+                            </div>
+                            <div class="box-cmt">
+                                <h3>Phạm Dương</h3>
+                                <p>Ơ mây zing gút chóp em 😎</p>
+                                <div class="menu-cmt">
+                                    <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
+                                </div>
+                            </div>                        
+                        </div>
+                        <button class="more-cmt" id="more-cmt" onclick="hide('more-cmt', 'cmt-next')">Xem thêm 1 bình luận</button>
+                        <div class="cmt cmt-next" id="cmt-next">
+                            <div class="avt">
+                                <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/127586061_3828259873871709_2595024946868850254_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=hsa6MDtnmeEAX8s87au&_nc_ht=scontent.fhan2-1.fna&oh=fbc1f6eaac0d28a66f468bb1e77374b5&oe=5FED246F" alt="">
+                            </div>
+                            <div class="box-cmt">
+                                <h3>Duy Khánh</h3>
+                                <p>Clone ah, hủy kết bạn thôi</p>
+                                <div class="menu-cmt">
+                                    <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="post1">
+                    <div class="title">
+                        <div class="avt">
+                            <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/125562670_1273921896300167_3356570656127877967_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=3tL_4oWXXOIAX9Lm7ve&_nc_ht=scontent.fhan5-1.fna&oh=2e947c956d1c0e1118df38c1adb3bcda&oe=5FE760B9" alt="">
+                        </div>
+                        <div class="text">
+                            <p><span>Đông</span></p>
+                            <p>22 tháng 10 lúc 1h03 · <i class="fa fa-globe-asia"></i> </p>
+                        </div>
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    <p>Ghê :3</p>
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/6o6gvZ1kJ7w" frameborder="0" allow="loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="reaction">
+                        <p><i style="color: #1095f4" class="fa fa-thumbs-up"></i> 76</p>
+                        <p>2 bình luận</p>
+                    </div>
+                    <div class="main-post">
+                        <div class="post-menu">
+                            <button id="like2" onclick="like('like2')" ><i class="fa fa-thumbs-up"></i> Thích</button>
+                            <p><i class="fa fa-comment"></i> Bình luận</p>
+                            <p><i class="fa fa-share"></i> Chia sẻ</p>
+                        </div>
+                        <p>Phù hợp nhất <i class="fa fa-caret-down"></i></p>
+                        <div class="write-cmt">
+                            <div class="avt">
+                                <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/125562670_1273921896300167_3356570656127877967_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=3tL_4oWXXOIAX9Lm7ve&_nc_ht=scontent.fhan5-1.fna&oh=2e947c956d1c0e1118df38c1adb3bcda&oe=5FE760B9" alt="">
+                            </div>
+                            <input type="text" placeholder="Viết bình luận...">
+                        </div>
+                        <div class="cmt">
+                            <div class="avt">
+                                <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/121984936_2528470647444799_6530212761749001973_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HPXb1kbicUsAX9yDMhr&_nc_ht=scontent.fhan5-7.fna&oh=f153d09859ed6c0f4f89a3cb3934246b&oe=5FEA9035" alt="">
+                            </div>
+                            <div class="box-cmt">
+                                <h3>Doan Vũ</h3>
+                                <p>Đen :v</p> 
+                                <div class="menu-cmt">
+                                    <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
+                                </div>
+                            </div>                        
+                        </div>
+                        <button class="more-cmt" id="more-cmt2" onclick="hide('more-cmt2', 'cmt-next2')">Xem thêm 1 bình luận</button>
+                        <div class="cmt cmt-next" id="cmt-next2">
+                            <div class="avt">
+                                <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
+                            </div>
+                            <div class="box-cmt">
+                                <h3>Tất Trung</h3>
+                                <p>Ngol =))</p>
+                                <div class="menu-cmt">
+                                    <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gioi_thieu tab tab-hidden">
+            <div class="left">
+                <h3>Giới thiệu</h3>
+                <button onclick="changeTabIntroduce('tq')" class="left-item_introduce tq introduce-selected ">Tổng quan</button>
+                <button onclick="changeTabIntroduce('cv')" class="left-item_introduce cv">Công việc và học vấn</button>
+                <button onclick="changeTabIntroduce('ns')" class="left-item_introduce ns">Nơi ở hiện tại</button>
+                <button onclick="changeTabIntroduce('lh')" class="left-item_introduce lh">Thông tin liên hệ cơ bản</button>
+            </div>
+            <div class="tong_quan tab_introduce tab-show">
+                <p><i class="fa fa-briefcase"></i> Làm việc tại <a href="https://www.facebook.com/HITClub.HaUI">CLB 
+                    Tin học - Đại học công nghiệp Hà Nội</a></p>
+               <p><i class="fa fa-graduation-cap"></i> Học Công nghệ thông tin tại
+                   <a href="https://www.facebook.com/DHCNHN.DCN.HaUI">Đại Học Công Nghiệp Hà Nội</a></p>
+               <p><i class="fa fa-graduation-cap"></i> Đã học tại 
+                   <a href="https://www.facebook.com/DHCNHN.DCN.HaUI"> THPT C Kim Bảng</a></p>
+               <p><i class="fa fa-home"></i> Sống tại <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
+               </p>
+               <p><i class="fa fa-map-marker-alt"></i> Đến từ <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
+               </p>
+               <div class="box-introduce">
+                <i class="fa fa-phone"></i>
+                <div class="main-text">
+                    <p>096 116 10 48</p>
+                    <span>Di động</span>
+                </div>
+               </div>
+            </div>
+            <div class="jobs tab_introduce tab-hidden">
+                <h4>Công việc</h4>
+                <div class="job">
+                    <div class="avt">
+                        <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
+                    </div>
+                    <div class="main-text">
+                        <p>Làm việc tại CLB Tin học - Đại học công nghiệp Hà Nội</p>
+                        <span>17 tháng 9, 2020 - Hiện tại.</span>
+                    </div>
+                </div>
+                <h4>Đại học</h4>
+                <div class="job">
+                    <div class="avt">
+                        <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/13726609_532882893578621_1776984133114367752_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=nGltkgFVq2sAX_VJPMY&_nc_ht=scontent.fhan5-6.fna&oh=1ee31dca2795c361e3cd6a73019a81ca&oe=5FF0034E" alt="">
+                    </div>
+                    <div class="main-text">
+                        <p>Học Công nghệ thông tin tại Đại học công nghiệp Hà Nội</p>
+                        <span>2019 - Hiện tại.</span>
+                    </div>
+                </div>
+                <h4>Trường trung học</h4>
+                <div class="job">
+                    <div class="avt">
+                        <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/123500645_2790125687894823_3972453313338912973_n.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=POjKrnXgctAAX_5hnh0&_nc_ht=scontent.fhan5-7.fna&oh=8c6cee22cfd477df45ae090e7b7f5d1e&oe=5FEF076D" alt="">
+                    </div>
+                    <div class="main-text">
+                        <p>Đã từng học tại THPT C Kim Bảng</p>
+                        <span>2016 -2019.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="que_quan tab_introduce tab-hidden">
+                <h4>Nơi ở hiện tại</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.585293702473!2d105.74028345021036!3d21.049273185918572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454f11f5bf985%3A0x311c0ae6cb1c1a0d!2zMTMyIMSQxrDhu51uZyBD4bqndSBEaeG7hW4sIE1pbmggS2hhaSwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1607069138600!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="lien_he tab_introduce tab-hidden">
+                <h4>Thông tin liên hệ</h4>
+                <div class="box-introduce">
+                    <i class="fa fa-phone"></i>
+                    <div class="main-text">
+                        <p>096 116 10 48</p>
+                        <span>Di động</span>
+                    </div>
+                </div>
+                <div class="box-introduce">
+                    <i class="fa fa-envelope"></i>
+                    <div class="main-text">
+                        <p>nguyenbadong01@gmail.com</p>
+                        <span>Email</span>
+                    </div>
+                </div>
+                <h4>Các trang web và liên kết xã hội</h4>
+                <div class="box-introduce">
+                    <i class="fab fa-instagram"></i>
+                    <div class="main-text">
+                        <p>___4thang12___</p>
+                        <span>Instagram</span>
+                    </div>
+                </div>
+                <div class="box-introduce">
+                    <i class="fab fa-github"></i> 
+                    <div class="main-text">
+                        <p>https://github.com/badongit</p>
+                        <span>Github</span>
+                    </div>
+                </div>
+                <h4>Thông tin cơ bản</h4>
+                <div class="box-introduce">
+                    <i class="fa fa-male"></i>
+                    <div class="main-text">
+                        <p>Nam</p>
+                        <span>Giới tính</span>
+                    </div>
+                </div>
+                <div class="box-introduce">
+                    <i class="fa fa-birthday-cake"></i>
+                    <div class="main-text">
+                        <p>4 tháng 12 năm 2001</p>
+                        <span>Ngày sinh</span>
+                    </div>
+                </div>
+                <div class="box-introduce">
+                    <i class="fa fa-language"></i>
+                    <div class="main-text">
+                        <p>Tiếng Việt</p>
+                        <span>Ngôn ngữ</span>
+                    </div>
+                </div>
+                <div class="box-introduce">
+                    <i class="fa fa-female"></i>
+                    <div class="main-text">
+                        <p>Nữ</p>
+                        <span>Thích</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friend-list tab tab-hidden">
+            <h3>Bạn bè</h3>
+            <div class="menu">
+                <button class="menu-friend-item menu-selected all" onclick="changeTabFriend('all')">Tất cả bạn bè</button>
+                <button class="menu-friend-item new" onclick="changeTabFriend('new')">Đã thêm gần đây</button>
+                <button class="menu-friend-item bd" onclick="changeTabFriend('bd')">Sinh nhật</button>
+                <button class="menu-friend-item univer" onclick="changeTabFriend('univer')">Đại học</button>
+            </div>
+            <div class="allFriend tab-friend tab-show">
+                <div class="box-friend">
+                    <img src="./image/Minz.jpg" alt="">
+                    <div class="main-text"><p>Minh Phương</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="./image/Logo_Dong.png" alt="">
+                    <div class="main-text"><p>Nguyễn Đông</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="./image/Phong.jpg" alt="">
+                    <div class="main-text"><p>Hà Phòng Gorơki</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="./image/MaiPhuong.jpg" alt="">
+                    <div class="main-text"><p>Phương Sapphire</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.0-9/127586061_3828259873871709_2595024946868850254_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=7IY5XJfcqMwAX-vXlHH&_nc_ht=scontent.fhan5-5.fna&oh=28639fba9dbf42d39aa81e60c1fb933c&oe=5FE92FEF" alt="">
+                    <div class="main-text"><p>Duy Khánh</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/121984936_2528470647444799_6530212761749001973_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HPXb1kbicUsAX9yDMhr&_nc_ht=scontent.fhan5-7.fna&oh=f153d09859ed6c0f4f89a3cb3934246b&oe=5FEA9035" alt="">
+                    <div class="main-text"><p>Doan Vũ</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
+                    <div class="main-text"><p>Tất Trung</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
+                    <div class="main-text"><p>Lê Văn Nam</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
+                    <div class="main-text"><p>Trần Chiến Công</p>
+                    <span>111 bạn chung</span></div>
+                </div> 
+            </div>
+            <div class="newFriend tab-friend tab-hidden">
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
+                    <div class="main-text"><p>Lê Văn Nam</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
+                    <div class="main-text"><p>Trần Chiến Công</p>
+                    <span>111 bạn chung</span></div>
+                </div> 
+            </div>
+            <div class="birthFriend tab-friend tab-hidden">
+                <div class="box-friend">
+                    <img src="./image/Logo_Dong.png" alt="">
+                    <div class="main-text"><p>Nguyễn Đông</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+            </div>
+            <div class="univerFriend tab-friend tab-hidden">
+                <div class="box-friend">
+                    <img src="./image/Minz.jpg" alt="">
+                    <div class="main-text"><p>Minh Phương</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="./image/Logo_Dong.png" alt="">
+                    <div class="main-text"><p>Nguyễn Đông</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="./image/Phong.jpg" alt="">
+                    <div class="main-text"><p>Hà Phòng Gorơki</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="./image/MaiPhuong.jpg" alt="">
+                    <div class="main-text"><p>Phương Sapphire</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.0-9/127586061_3828259873871709_2595024946868850254_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=7IY5XJfcqMwAX-vXlHH&_nc_ht=scontent.fhan5-5.fna&oh=28639fba9dbf42d39aa81e60c1fb933c&oe=5FE92FEF" alt="">
+                    <div class="main-text"><p>Duy Khánh</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/121984936_2528470647444799_6530212761749001973_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HPXb1kbicUsAX9yDMhr&_nc_ht=scontent.fhan5-7.fna&oh=f153d09859ed6c0f4f89a3cb3934246b&oe=5FEA9035" alt="">
+                    <div class="main-text"><p>Doan Vũ</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
+                    <div class="main-text"><p>Tất Trung</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
+                    <div class="main-text"><p>Lê Văn Nam</p>
+                    <span>111 bạn chung</span></div>
+                </div>
+                <div class="box-friend">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
+                    <div class="main-text"><p>Trần Chiến Công</p>
+                    <span>111 bạn chung</span></div>
+                </div> 
+            </div>
+        </div>
+        <div class="image-list tab tab-hidden">
+            <h3>Ảnh</h3>
+            <div class="menu">
+                <button class="menu-friend-item menu-selected all" onclick="changeTabFriend('all')">Ảnh của bạn</button>
+                <button class="menu-friend-item new" onclick="changeTabFriend('new')">Ảnh có mặt bạn</button>
+                <button class="menu-friend-item bd" onclick="changeTabFriend('bd')">Album</button>
+            </div>
+            <div class="allImage tab-friend tab-show">
+                <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt=""></div>
+                        <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Logo_Dong.png" alt=""></div>
+                        <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
+                        <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
+                        <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
+                        <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
+            </div>
+            <div class="allImage tab-friend tab-hidden">
+                <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt=""></div>
+                <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
+                <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
+                <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
+                <div class="image"><img src="./image/Logo_Dong.png" alt=""></div>
+            </div>
+            <div class="allImage tab-friend tab-hidden">
+                    <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
+                    <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
+                    <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
+                    <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function hide(id1,id2) {
+            var x = document.getElementById(id1);
+            var y = document.getElementById(id2);
+            x.style.display = 'none';
+            y.style.display = 'flex';
+        }
+
+        function like(id) {
+            var a = document.getElementById(id);
+            if(a.className.indexOf('liked') == -1) {
+                a.className += ' liked';
+            } else {
+                a.className = a.className.replace(' liked', '');
+            }
+        }
+        function changeTab(id) {
+            var x = document.getElementsByClassName('left-item');
+            var y = document.getElementsByClassName('tab');
+            for(var i = 0; i < x.length ; i++) {
+                if(x[i].className.indexOf(id) != -1) {
+                    if( x[i].className.indexOf('menu-selected') == -1){
+                        x[i].className += ' menu-selected';
+                        y[i].className = y[i].className.replace(' tab-hidden', ' tab-show');
+                    }     
+                } else  {
+                    x[i].className = x[i].className.replace(' menu-selected', '');
+                    y[i].className = y[i].className.replace(' tab-show', ' tab-hidden');
+                }
+            }
+        }
+        function changeTabIntroduce(id) {
+            var x = document.getElementsByClassName('left-item_introduce');
+            var y = document.getElementsByClassName('tab_introduce');
+            for(var i = 0; i < x.length ; i++) {
+                if(x[i].className.indexOf(id) != -1) {
+                    if( x[i].className.indexOf('introduce-selected') == -1){
+                        x[i].className += ' introduce-selected';
+                        y[i].className = y[i].className.replace(' tab-hidden', ' tab-show');
+                    }     
+                } else  {
+                    x[i].className = x[i].className.replace(' introduce-selected', '');
+                    y[i].className = y[i].className.replace(' tab-show', ' tab-hidden');
+                }
+            }
+        }
+        function changeTabFriend(id) {
+            var x = document.getElementsByClassName('menu-friend-item');
+            var y = document.getElementsByClassName('tab-friend');
+            for(var i = 0; i < x.length ; i++) {
+                if(x[i].className.indexOf(id) != -1) {
+                    if( x[i].className.indexOf('menu-selected') == -1){
+                        x[i].className += ' menu-selected';
+                        y[i].className = y[i].className.replace(' tab-hidden', ' tab-show');
+                    }     
+                } else  {
+                    x[i].className = x[i].className.replace(' menu-selected', '');
+                    y[i].className = y[i].className.replace(' tab-show', ' tab-hidden');
+                }
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

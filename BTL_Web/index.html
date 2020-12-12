@@ -7,21 +7,69 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="nav">
+        <div style="display: flex; width: 25%;">
+            <div class="left">
+                <a href="">
+                    <div class="fab fa-facebook-f b"></div>
+                </a>
+            </div>
+            <div class="search-nav">
+                <div>
+                    <i class="fa fa-search"></i>
+                </div>
+                <input type="search" placeholder="Tìm kiếm nhóm" id="search-nav">
+            </div>
+        </div>
+        <div class="main">
+            <a href="homepage.html">
+                <div class="fas fa-home a"></div>
+            </a>
+            <a href="video.html">
+                <div class="fas fa-tv a"></div>
+            </a>
+            <a href="group.html">
+                <div class="fas fa-users a"></div>
+            </a>
+            <a href="market.html">
+                <div class="fas fa-hotel a"></div>
+            </a>
+            <a href="">
+                <div class="fas fa-gamepad a"></div>
+            </a>
+        </div>
+
+        <div class="right">
+            <a href="./index.html">
+                <div class="icon fa fa-user-circle c"></div>
+            </a>
+            <a href="./mess.html">
+                <div class="fab fa-facebook-messenger c"></div>
+            </a>
+            <a href="">
+                <div class="fas fa-bell c"></div>
+            </a>
+            <a href="">
+                <div class="fas fa-plus c"></div>
+            </a>
+            <div class="fas fa-caret-down ">
+                <div class="dangxuat">Đăng xuất</div>
+            </div>
+        </div>
+    </div>
     <div class="header">
-        <div class="cover">  
+        <div class="cover">
             <div class="cover_change"><span><i class="fa fa-camera"></i> Chỉnh sửa ảnh bìa</span></div>
             <div class="avatar">
                 <div class="avatar_change"><i class="fa fa-camera"></i></div>
-            </div> 
+            </div>
         </div>
         <div class="header_maintext">
             <h1>Đông</h1>
@@ -53,7 +101,7 @@
                          Tin học - Đại học công nghiệp Hà Nội</a></p>
                     <p><i class="fa fa-graduation-cap"></i> Học tại
                         <a href="https://www.facebook.com/DHCNHN.DCN.HaUI">Đại Học Công Nghiệp Hà Nội</a></p>
-                    <p><i class="fa fa-graduation-cap"></i> Đã học tại 
+                    <p><i class="fa fa-graduation-cap"></i> Đã học tại
                         <a href="https://www.facebook.com/DHCNHN.DCN.HaUI"> THPT C Kim Bảng</a></p>
                     <p><i class="fa fa-home"></i> Sống tại <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
                     </p>
@@ -71,7 +119,8 @@
                 <div class="list-image">
                     <p><span>Ảnh</span><span>Xem tất cả ảnh</span></p>
                     <div class="images">
-                        <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt=""></div>
+                        <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4"
+                                alt=""></div>
                         <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
                         <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
                         <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
@@ -121,7 +170,7 @@
                         <div class="friend">
                             <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
                             <p>Trần Chiến Công</p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="footer">
@@ -163,7 +212,7 @@
                     </div>
                     <div class="main-post">
                         <div class="post-menu">
-                            <button id="like" onclick="like('like')" ><i class="fa fa-thumbs-up"></i> Thích</button>
+                            <button id="like" onclick="like('like')"><i class="fa fa-thumbs-up"></i> Thích</button>
                             <p><i class="fa fa-comment"></i> Bình luận</p>
                             <p><i class="fa fa-share"></i> Chia sẻ</p>
                         </div>
@@ -184,7 +233,7 @@
                                 <div class="menu-cmt">
                                     <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                         <button class="more-cmt" id="more-cmt" onclick="hide('more-cmt', 'cmt-next')">Xem thêm 1 bình luận</button>
                         <div class="cmt cmt-next" id="cmt-next">
@@ -197,7 +246,7 @@
                                 <div class="menu-cmt">
                                     <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +269,7 @@
                     </div>
                     <div class="main-post">
                         <div class="post-menu">
-                            <button id="like2" onclick="like('like2')" ><i class="fa fa-thumbs-up"></i> Thích</button>
+                            <button id="like2" onclick="like('like2')"><i class="fa fa-thumbs-up"></i> Thích</button>
                             <p><i class="fa fa-comment"></i> Bình luận</p>
                             <p><i class="fa fa-share"></i> Chia sẻ</p>
                         </div>
@@ -237,11 +286,11 @@
                             </div>
                             <div class="box-cmt">
                                 <h3>Doan Vũ</h3>
-                                <p>Đen :v</p> 
+                                <p>Đen :v</p>
                                 <div class="menu-cmt">
                                     <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                         <button class="more-cmt" id="more-cmt2" onclick="hide('more-cmt2', 'cmt-next2')">Xem thêm 1 bình luận</button>
                         <div class="cmt cmt-next" id="cmt-next2">
@@ -254,7 +303,7 @@
                                 <div class="menu-cmt">
                                     <p><span>Thích</span> · <span>Trả lời</span> · <span>1 tuần</span></p>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -271,21 +320,21 @@
             <div class="tong_quan tab_introduce tab-show">
                 <p><i class="fa fa-briefcase"></i> Làm việc tại <a href="https://www.facebook.com/HITClub.HaUI">CLB 
                     Tin học - Đại học công nghiệp Hà Nội</a></p>
-               <p><i class="fa fa-graduation-cap"></i> Học Công nghệ thông tin tại
-                   <a href="https://www.facebook.com/DHCNHN.DCN.HaUI">Đại Học Công Nghiệp Hà Nội</a></p>
-               <p><i class="fa fa-graduation-cap"></i> Đã học tại 
-                   <a href="https://www.facebook.com/DHCNHN.DCN.HaUI"> THPT C Kim Bảng</a></p>
-               <p><i class="fa fa-home"></i> Sống tại <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
-               </p>
-               <p><i class="fa fa-map-marker-alt"></i> Đến từ <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
-               </p>
-               <div class="box-introduce">
-                <i class="fa fa-phone"></i>
-                <div class="main-text">
-                    <p>096 116 10 48</p>
-                    <span>Di động</span>
+                <p><i class="fa fa-graduation-cap"></i> Học Công nghệ thông tin tại
+                    <a href="https://www.facebook.com/DHCNHN.DCN.HaUI">Đại Học Công Nghiệp Hà Nội</a></p>
+                <p><i class="fa fa-graduation-cap"></i> Đã học tại
+                    <a href="https://www.facebook.com/DHCNHN.DCN.HaUI"> THPT C Kim Bảng</a></p>
+                <p><i class="fa fa-home"></i> Sống tại <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
+                </p>
+                <p><i class="fa fa-map-marker-alt"></i> Đến từ <a href="https://www.facebook.com/places/Hoat-dong-giai-tri-tai-Kim-Bang-Ha-Nam-Ninh-Vietnam/109121749121722/"> Kim Bảng, Hà Nam Ninh, Vietnam</a>
+                </p>
+                <div class="box-introduce">
+                    <i class="fa fa-phone"></i>
+                    <div class="main-text">
+                        <p>096 116 10 48</p>
+                        <span>Di động</span>
+                    </div>
                 </div>
-               </div>
             </div>
             <div class="jobs tab_introduce tab-hidden">
                 <h4>Công việc</h4>
@@ -321,7 +370,8 @@
             </div>
             <div class="que_quan tab_introduce tab-hidden">
                 <h4>Nơi ở hiện tại</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.585293702473!2d105.74028345021036!3d21.049273185918572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454f11f5bf985%3A0x311c0ae6cb1c1a0d!2zMTMyIMSQxrDhu51uZyBD4bqndSBEaeG7hW4sIE1pbmggS2hhaSwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1607069138600!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.585293702473!2d105.74028345021036!3d21.049273185918572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454f11f5bf985%3A0x311c0ae6cb1c1a0d!2zMTMyIMSQxrDhu51uZyBD4bqndSBEaeG7hW4sIE1pbmggS2hhaSwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1607069138600!5m2!1svi!2s"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="lien_he tab_introduce tab-hidden">
                 <h4>Thông tin liên hệ</h4>
@@ -348,7 +398,7 @@
                     </div>
                 </div>
                 <div class="box-introduce">
-                    <i class="fab fa-github"></i> 
+                    <i class="fab fa-github"></i>
                     <div class="main-text">
                         <p>https://github.com/badongit</p>
                         <span>Github</span>
@@ -396,115 +446,136 @@
             <div class="allFriend tab-friend tab-show">
                 <div class="box-friend">
                     <img src="./image/Minz.jpg" alt="">
-                    <div class="main-text"><p>Minh Phương</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Minh Phương</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="./image/Logo_Dong.png" alt="">
-                    <div class="main-text"><p>Nguyễn Đông</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Nguyễn Đông</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="./image/Phong.jpg" alt="">
-                    <div class="main-text"><p>Hà Phòng Gorơki</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Hà Phòng Gorơki</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="./image/MaiPhuong.jpg" alt="">
-                    <div class="main-text"><p>Phương Sapphire</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Phương Sapphire</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.0-9/127586061_3828259873871709_2595024946868850254_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=7IY5XJfcqMwAX-vXlHH&_nc_ht=scontent.fhan5-5.fna&oh=28639fba9dbf42d39aa81e60c1fb933c&oe=5FE92FEF" alt="">
-                    <div class="main-text"><p>Duy Khánh</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Duy Khánh</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/121984936_2528470647444799_6530212761749001973_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HPXb1kbicUsAX9yDMhr&_nc_ht=scontent.fhan5-7.fna&oh=f153d09859ed6c0f4f89a3cb3934246b&oe=5FEA9035" alt="">
-                    <div class="main-text"><p>Doan Vũ</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Doan Vũ</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
-                    <div class="main-text"><p>Tất Trung</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Tất Trung</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
-                    <div class="main-text"><p>Lê Văn Nam</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Lê Văn Nam</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
-                    <div class="main-text"><p>Trần Chiến Công</p>
-                    <span>111 bạn chung</span></div>
-                </div> 
+                    <div class="main-text">
+                        <p>Trần Chiến Công</p>
+                        <span>111 bạn chung</span></div>
+                </div>
             </div>
             <div class="newFriend tab-friend tab-hidden">
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
-                    <div class="main-text"><p>Lê Văn Nam</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Lê Văn Nam</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
-                    <div class="main-text"><p>Trần Chiến Công</p>
-                    <span>111 bạn chung</span></div>
-                </div> 
+                    <div class="main-text">
+                        <p>Trần Chiến Công</p>
+                        <span>111 bạn chung</span></div>
+                </div>
             </div>
             <div class="birthFriend tab-friend tab-hidden">
                 <div class="box-friend">
                     <img src="./image/Logo_Dong.png" alt="">
-                    <div class="main-text"><p>Nguyễn Đông</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Nguyễn Đông</p>
+                        <span>111 bạn chung</span></div>
                 </div>
             </div>
             <div class="univerFriend tab-friend tab-hidden">
                 <div class="box-friend">
                     <img src="./image/Minz.jpg" alt="">
-                    <div class="main-text"><p>Minh Phương</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Minh Phương</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="./image/Logo_Dong.png" alt="">
-                    <div class="main-text"><p>Nguyễn Đông</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Nguyễn Đông</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="./image/Phong.jpg" alt="">
-                    <div class="main-text"><p>Hà Phòng Gorơki</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Hà Phòng Gorơki</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="./image/MaiPhuong.jpg" alt="">
-                    <div class="main-text"><p>Phương Sapphire</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Phương Sapphire</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.0-9/127586061_3828259873871709_2595024946868850254_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=7IY5XJfcqMwAX-vXlHH&_nc_ht=scontent.fhan5-5.fna&oh=28639fba9dbf42d39aa81e60c1fb933c&oe=5FE92FEF" alt="">
-                    <div class="main-text"><p>Duy Khánh</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Duy Khánh</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.0-9/121984936_2528470647444799_6530212761749001973_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HPXb1kbicUsAX9yDMhr&_nc_ht=scontent.fhan5-7.fna&oh=f153d09859ed6c0f4f89a3cb3934246b&oe=5FEA9035" alt="">
-                    <div class="main-text"><p>Doan Vũ</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Doan Vũ</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt="">
-                    <div class="main-text"><p>Tất Trung</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Tất Trung</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/117228016_2566224273630038_7148875977633749036_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=fjsHiBIQKoQAX87cRge&_nc_ht=scontent.fhan5-6.fna&oh=36bc4a019a305883794b31f9981e475e&oe=5FE89E10" alt="">
-                    <div class="main-text"><p>Lê Văn Nam</p>
-                    <span>111 bạn chung</span></div>
+                    <div class="main-text">
+                        <p>Lê Văn Nam</p>
+                        <span>111 bạn chung</span></div>
                 </div>
                 <div class="box-friend">
                     <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/125552774_990073148155158_8136686651474857343_n.jpg?_nc_cat=107&ccb=2&_nc_sid=174925&_nc_ohc=NeeCJBtZX_YAX9ZH4Ay&_nc_ht=scontent.fhan5-6.fna&oh=821285690834c4e9e77fe40500440c9b&oe=5FE762D8" alt="">
-                    <div class="main-text"><p>Trần Chiến Công</p>
-                    <span>111 bạn chung</span></div>
-                </div> 
+                    <div class="main-text">
+                        <p>Trần Chiến Công</p>
+                        <span>111 bạn chung</span></div>
+                </div>
             </div>
         </div>
         <div class="image-list tab tab-hidden">
@@ -515,34 +586,35 @@
                 <button class="menu-friend-item bd" onclick="changeTabFriend('bd')">Album</button>
             </div>
             <div class="allImage tab-friend tab-show">
-                <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt=""></div>
-                        <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
-                        <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
-                        <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
-                        <div class="image"><img src="./image/Logo_Dong.png" alt=""></div>
-                        <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
-                        <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
-                        <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
-                        <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
+                <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4"
+                        alt=""></div>
+                <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
+                <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
+                <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
+                <div class="image"><img src="./image/Logo_Dong.png" alt=""></div>
+                <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
+                <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
+                <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
+                <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
             </div>
             <div class="allImage tab-friend tab-hidden">
-                <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4" alt=""></div>
+                <div class="image"><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/109712643_3239652309429621_8539216907864515167_o.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=q-V3d_FvrQEAX89m7KC&_nc_ht=scontent.fhan5-1.fna&oh=2f881143732999027fcab43491d486ac&oe=5FEA10D4"
+                        alt=""></div>
                 <div class="image"><img src="./image/Akali_Splash.jpg" alt=""></div>
                 <div class="image"><img src="./image/Kayn.jpg" alt=""></div>
                 <div class="image"><img src="./image/Yasuo.jpg" alt=""></div>
                 <div class="image"><img src="./image/Logo_Dong.png" alt=""></div>
             </div>
             <div class="allImage tab-friend tab-hidden">
-                    <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
-                    <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
-                    <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
-                    <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
+                <div class="image"><img src="./image/KDA-Akali.jpg" alt=""></div>
+                <div class="image"><img src="./image/Morgana.jpg" alt=""></div>
+                <div class="image"><img src="./image/True-Damage-Yasuo.jpg" alt=""></div>
+                <div class="image"><img src="./image/BGmixigaming (2).jpg" alt=""></div>
             </div>
         </div>
     </div>
     <script>
-
-        function hide(id1,id2) {
+        function hide(id1, id2) {
             var x = document.getElementById(id1);
             var y = document.getElementById(id2);
             x.style.display = 'none';
@@ -551,58 +623,60 @@
 
         function like(id) {
             var a = document.getElementById(id);
-            if(a.className.indexOf('liked') == -1) {
+            if (a.className.indexOf('liked') == -1) {
                 a.className += ' liked';
             } else {
                 a.className = a.className.replace(' liked', '');
             }
         }
+
         function changeTab(id) {
             var x = document.getElementsByClassName('left-item');
             var y = document.getElementsByClassName('tab');
-            for(var i = 0; i < x.length ; i++) {
-                if(x[i].className.indexOf(id) != -1) {
-                    if( x[i].className.indexOf('menu-selected') == -1){
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].className.indexOf(id) != -1) {
+                    if (x[i].className.indexOf('menu-selected') == -1) {
                         x[i].className += ' menu-selected';
                         y[i].className = y[i].className.replace(' tab-hidden', ' tab-show');
-                    }     
-                } else  {
+                    }
+                } else {
                     x[i].className = x[i].className.replace(' menu-selected', '');
                     y[i].className = y[i].className.replace(' tab-show', ' tab-hidden');
                 }
             }
         }
+
         function changeTabIntroduce(id) {
             var x = document.getElementsByClassName('left-item_introduce');
             var y = document.getElementsByClassName('tab_introduce');
-            for(var i = 0; i < x.length ; i++) {
-                if(x[i].className.indexOf(id) != -1) {
-                    if( x[i].className.indexOf('introduce-selected') == -1){
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].className.indexOf(id) != -1) {
+                    if (x[i].className.indexOf('introduce-selected') == -1) {
                         x[i].className += ' introduce-selected';
                         y[i].className = y[i].className.replace(' tab-hidden', ' tab-show');
-                    }     
-                } else  {
+                    }
+                } else {
                     x[i].className = x[i].className.replace(' introduce-selected', '');
                     y[i].className = y[i].className.replace(' tab-show', ' tab-hidden');
                 }
             }
         }
+
         function changeTabFriend(id) {
             var x = document.getElementsByClassName('menu-friend-item');
             var y = document.getElementsByClassName('tab-friend');
-            for(var i = 0; i < x.length ; i++) {
-                if(x[i].className.indexOf(id) != -1) {
-                    if( x[i].className.indexOf('menu-selected') == -1){
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].className.indexOf(id) != -1) {
+                    if (x[i].className.indexOf('menu-selected') == -1) {
                         x[i].className += ' menu-selected';
                         y[i].className = y[i].className.replace(' tab-hidden', ' tab-show');
-                    }     
-                } else  {
+                    }
+                } else {
                     x[i].className = x[i].className.replace(' menu-selected', '');
                     y[i].className = y[i].className.replace(' tab-show', ' tab-hidden');
                 }
             }
         }
-        
     </script>
 </body>
 

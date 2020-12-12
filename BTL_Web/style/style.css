@@ -9,12 +9,136 @@ html,body {
   background-color: var(--secondary-color);
   font-size: 15px;
 }
+button,input {
+  outline: none;
+  cursor: pointer;
+}
 :root {
   --primary-color: #e4e6eb;
   --secondary-color: #f0f2f5;
   --text-black: #050505;
   --text-blue: #1876f2;
   --text-gray: #65676b;
+}
+/* ================= nav ============== */
+.search-nav > div,.search-nav,.main > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  height: 50px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 1px 0 5px gray;
+}
+.nav .search-nav > div{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(240,242,245);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#search-nav{
+  background-color: rgb(240,242,245);
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 200px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.nav .a{
+  padding:16px 18px;
+  font-size: 20px;
+  
+}
+
+.nav .left > a{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .main a{
+  width: 20%;
+  text-align: center;
+  color: black;
+}
+
+.nav .b{
+  background-color: blue;
+  color: floralwhite;
+}
+.nav .a:hover{
+  border-bottom:2px solid blue;
+}
+.nav .c{
+  padding : 10px;
+  background-color: #ddd;
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+.nav .c:hover .dangxuat{
+  display: block;
+}
+.nav .dangxuat{
+  display: none;
+  padding: 16px 18px;
+  background-color: blueviolet;
+  position: absolute;
+  top:100%;
+  left: -100%;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 100;
+  font-size: 11px;
+}
+.nav .search{
+  width: 15%;
+  line-height: 64px;
+}
+
+.nav .left{
+  width: max-content;
+  text-align: center;
+  margin-right: 10px;
+}
+.nav .main{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .right{
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  width: 25%;
+  /* line-height: 50px; */
+
+}
+.nav .search input{
+  border: none;
+  font-weight: 600;
+  
+}
+.nav.main a:hover {
+      background-color: #ddd;
+      border-radius: 10px;  
 }
 /* ================ header ================== */
 .header {

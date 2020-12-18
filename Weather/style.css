@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+}
+p {
+    margin: 10px 0;
+}
+#current > b {
+    font-size: 20px;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali', cursive;
+    background-color: #031321;
+}
+.container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.search {
+    width: 100%;
+    display: flex;
+}
+.search > * {
+    padding: 4px 8px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+#inputCity {
+    flex: 1;
+}
+#current h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0;
+}
+#current .tempCurrent {
+    font-size: 36px;
+    text-align: center;
+    margin: 10px 0;
+}
+#current .iconCurrent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#current .iconCurrent img{
+    width: 80px;
+}
+#current .day {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+#current .description {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+#forecast {
+    display: flex;
+}
+#forecast > * {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}

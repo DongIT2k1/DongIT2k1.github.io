@@ -28,6 +28,7 @@ function Weather(cityName) {
         let icon = data['weather'][0]['icon'];
         let date = new Date(data['dt']*1000);
         let description = data['weather'][0]['description'];
+        description = description.charAt(0).toUpperCase() + description.slice(1);
         val = `
             <h1>${data['name']}</h1>
             <p class="tempCurrent"><span>${Math.round(temp)}&#186</span></p>

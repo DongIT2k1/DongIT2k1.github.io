@@ -1,0 +1,443 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+:root {
+    --orange-color: #F47B2A;
+}
+* {
+    box-sizing: border-box;
+}
+.logo {
+    width: 127px;
+    padding: 15px;
+}
+.logo img{
+    width: 100%;
+}
+.header {
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    box-shadow: 0 0 5px rgba(107, 107, 107, 0.493)
+}
+.menu {
+    display: flex;
+    align-items: flex-end;
+}
+.menu .item {
+    padding: 15px;
+    margin: 0 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.menu .item:last-child {
+    background-color: var(--orange-color);
+    color: white;
+    padding: 20px;
+    text-transform: unset;
+    border-radius: 50px;
+}
+.menu .item:first-child {
+    border-bottom: 4px solid var(--orange-color);
+}
+.menu .item:nth-child(2)::before,
+.menu .item:nth-child(3)::before,
+.menu .item:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--orange-color);
+    transition: 0.35s;
+}
+.menu .item:hover::before {
+    left: 0;
+}
+/* .menu .item:hover {
+    border-bottom: 3px solid var(--orange-color);
+    transition: 0.5s;
+} */
+.menu .item:last-child {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+.background {
+    margin-top: 68.75px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url('./TapThe.jpg');
+    background-size: cover;
+}
+.background > * {
+    flex: 1;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.background .item .main {
+    position: absolute;
+    padding: 100px 40px;
+    top: -100%;
+    left: 0;
+}
+.background .item:hover .main {
+    top: 0;
+    bottom: 0;
+    transition: 0.35s;
+}
+.background .item:hover {
+    background-color: #125af591;
+}
+.background p {
+    font-size: 18px;
+}
+.background h2 {
+    font-size: 36px;
+}
+/* ============== about event ============= */
+.container>* {
+    padding: 50px 150px;
+}
+.container> * h2{
+    font-size: 38px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 30px 0;
+}
+.container>* h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    border-bottom: 2px solid rgb(0, 89, 255);
+}
+.container>* h2::after  {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 2px solid rgb(0, 89, 255);
+    background-color: #fff;
+    transform: translateY(50%);
+}
+.about-event .main, .leader .main {
+    display: flex;
+    padding: 30px 0;
+}
+.about-event .main>* {
+    flex:1;
+}
+.about-event .main .left img {
+    width: 100%;
+}
+.about-event .main .right h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.about-event .main .right p {
+    font-size: 20px;
+    color: gray;
+}
+.about-event .main .right>div {
+    padding: 6px 0;
+    color: gray;
+}
+.about-event .main .right i {
+    color: gray;
+    width: 25px;
+    font-size: 18px;
+}
+.about-event .main .right a {
+    color: rgb(0, 89, 255);
+}
+.about-event .main .right a:hover {
+    color:  rgb(0, 26, 255);
+}
+.about-event .main .right .triangle p {
+    background-color: var(--orange-color);
+    width: fit-content;
+    color: white!important;
+    padding: 20px 10px;
+}
+/* ============== leader =============== */
+.leader .main>* {
+    flex-basis: 30%;
+}
+.leader .main {
+    justify-content: space-around;
+}
+.leader .main img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.leader .main .item {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(104, 104, 104, 0.404);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.leader .main .item:hover {
+    color: white;
+    transition: 0.5s;
+}
+.leader .main .item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:  translate(-50%, 50%);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+    background-color: var(--orange-color);
+    z-index: 10;
+}
+.leader .main .item:hover::after{
+    width: 500px;
+    height: 500px;
+}
+.leader .main .item h4 {
+    position: relative;
+    font-size: 24px;
+    margin: 10px 0;
+    z-index: 100;
+}
+.leader .main .item p {
+    font-size:  18px;
+    position: relative;
+    z-index: 100;
+}
+.leader .main .item .image {
+    position: relative;
+    z-index: 100;
+}
+.leader .main .item .image .bgblack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    background-color: transparent;
+    transition: 0.5s ease-in;
+}
+.leader .main .item .image .bgblack div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 17px;
+    font-size: 18px;
+    color: transparent;
+    transition: 0.35s ease-out;
+}
+.leader .main .item .image .bgblack div span {
+    background-color: transparent;
+    transition: 0.35s ease-out;
+    position: absolute;
+}
+.leader .main .item .image .bgblack div span:nth-child(1){
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 2px;
+}
+.leader .main .item .image .bgblack div span:nth-child(2){
+    top: -250%;
+    right: 0;
+    width: 2px;
+    height: 250%;
+}
+.leader .main .item .image .bgblack div span:nth-child(3){
+    bottom: 0;
+    right: -200%;
+    width: 200%;
+    height: 2px;
+}
+.leader .main .item .image .bgblack div span:nth-child(4){
+    top: 250%;
+    left: 0;
+    height: 250%;
+    width: 2px;
+}
+.leader .main .item:hover .bgblack div span:nth-child(1) {
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+}
+.leader .main .item:hover .bgblack div span:nth-child(2) {
+    height: 100%;
+    top: 0;
+    background-color: #fff;
+}
+.leader .main .item:hover .bgblack div span:nth-child(3) {
+    width: 100%;
+    right: 0;
+    background-color: #fff;
+}
+.leader .main .item:hover .bgblack div span:nth-child(4) {
+    height: 100%;
+    top: 0;
+    background-color: #fff;
+}
+.leader .main .item:hover .bgblack {
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.leader .main .item:hover .bgblack div {
+    color: white;
+}
+/* ======== Our class =============== */
+.sub {
+    display: flex;
+    justify-content: space-between;
+}
+.sub > * {
+    flex-basis: 40%;
+    padding: 20px;
+}
+.sub img {
+    width: 100%;
+}
+.ourClass .sub h3 {
+    font-size:30px;
+    margin-bottom: 10px;
+}
+.ourClass .sub p {
+    color: gray;
+    font-size: 20px;
+}
+
+.ourClass h4 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.ourClass h4 div {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(104, 104, 104, 0.404);
+    border-radius: 50%;
+    position: relative;
+}
+.ourClass h4 div p {
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
+.memory {
+    padding: 20px;
+}
+.memory .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.memory .main >* {
+    width: 450px;
+    height: 350px;
+    background-size: 160%;
+    background-position: center;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+.memory .main >*:hover {
+    background-size: 200%;
+}
+.memory .main :nth-child(1) {
+    background-image: url('./1.jpg');
+}
+.memory .main :nth-child(2) {
+    background-image: url('./2.jpg');
+}
+.memory .main :nth-child(3) {
+    background-image: url('./3.jpg');
+}
+.memory .main :nth-child(4) {
+    background-image: url('./4.jpg');
+}
+.memory .main :nth-child(5) {
+    background-image: url('./5.jpg');
+}
+.memory .main :nth-child(6) {
+    background-image: url('./6.jpg');
+}
+.memory .main :nth-child(7) {
+    width: 100%;
+    margin: 20px 20px;
+    background-image: url('./0.jpg');
+    height: 878px;
+}
+
+.footer {
+    background-color: var(--orange-color);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+.triangle {
+    display: flex;
+}
+.triangle p{
+    margin: 0;
+}
+.triangle .left {
+    padding: 0;
+}
+.triangle .left .t1 {
+    display: flex;
+    flex-direction: row;
+}
+.triangle .left .t1 {
+    border-top:16px solid var(--orange-color) ;
+    border-left:16px solid transparent ;
+    border-right:16px solid var(--orange-color) ;
+    border-bottom:16px solid transparent;
+}
+.triangle .left .t2 {
+    border-bottom:16px solid var(--orange-color) ;
+    border-top:16px solid transparent ;
+    border-right:16px solid var(--orange-color) ;
+    border-left:16px solid transparent;
+}
+.triangle .t3 {
+    border-bottom: 32px solid transparent ;
+    border-top: 32px solid transparent ;
+    border-right: 32px solid transparent ;
+    border-left: 32px solid var(--orange-color);
+}
+
